@@ -8,7 +8,7 @@ let guesses = [];
 let currentGuess = [];
 
 //changed SecretWord to pick form the cornwords randomly
-const SecretWord = [console.log(randomWord(cornwords))];
+const SecretWord = "im dying";
 const NumberOfGuesses = 6;
 const Correct = 'correct';
 const Found = 'found';
@@ -175,6 +175,8 @@ function randomWord(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+for(var x=0; x<20; x++)
+  console.log(randomWord(cornwords));
 //end??
 
 
