@@ -8,7 +8,7 @@ let guesses = [];
 let currentGuess = [];
 
 //changed SecretWord to pick form the cornwords randomly
-const SecretWord = cornwords[Math.floor(Math.random()*cornwords.length)];
+var SecretWord = cornwords[Math.floor(Math.random()*cornwords.length)];
 const NumberOfGuesses = 6;
 const Correct = 'correct';
 const Found = 'found';
