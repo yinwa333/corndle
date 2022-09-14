@@ -25,7 +25,7 @@ public class ContainersManager : MonoBehaviour
 
     public void SetLetterContainersInRightPlaceColor()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 9; i++)
             SetLetterContainerColor(i, ColorDataStore.GetLetterInRightPlaceColor());
     }
 
