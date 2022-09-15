@@ -17,10 +17,10 @@ public class GameUIManager : MonoBehaviour
     {
         NotEnoughLettersUIobject.SetActive(true);
     }
-    public void ShowNotInListUIobject()
-    {
-        NotInListUIobject.SetActive(true);
-    }
+    //public void ShowNotInListUIobject()
+    //{
+        //NotInListUIobject.SetActive(true);
+    //}
     public void ShowGameWonUIobject()
     {
         GameWonUIobject.SetActive(true);

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     string currentWord = "";
 
     bool isGameEnded = false;
-    int tries = 6;
+    int tries = 3;
 
     WordsManager wordsManager;
     GameUIManager gameUIManager;
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         winningWord = wordsManager.GetRandomWord();
         containersManager.ClearContainers();
 
-        tries = 6;
+        tries = 3;
         currentWord = "";
         isGameEnded = false;
     }
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
 
     void MoveToNextTry()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 9; i++)
         {
             if (IsLetterInRightPlace(i))
                 containersManager.SetLetterContainerColor(i, ColorDataStore.GetLetterInRightPlaceColor());
@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
     {
         if (isGameEnded) return;
 
-        if (currentWord.Length < 5)
+        if (currentWord.Length < 9)
         {
             letter = letter.ToLower();
             currentWord += letter;
@@ -114,8 +114,8 @@ public class GameManager : MonoBehaviour
     {
         if (isGameEnded) return;
 
-        //Word is less than 5 letters
-        if (currentWord.Length < 5)
+        Word is less than 9 letters
+        if (currentWord.Length < 9)
         {
             gameUIManager.ShowNotEnoughLettersUIobject();
             return;
