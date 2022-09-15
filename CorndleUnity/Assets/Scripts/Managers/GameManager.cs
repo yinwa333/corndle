@@ -114,12 +114,12 @@ public class GameManager : MonoBehaviour
     {
         if (isGameEnded) return;
 
-        Word is less than 9 letters
-        if (currentWord.Length < 9)
-        {
-            gameUIManager.ShowNotEnoughLettersUIobject();
-            return;
-        }
+        //Word is less than 9;
+        //if (currentWord.Length < 9)
+        //{
+            //gameUIManager.ShowNotEnoughLettersUIobject();
+            //return;
+        //}
 
         //Word is not valid
         //if (!wordsManager.CheckIsWordValid(currentWord))
